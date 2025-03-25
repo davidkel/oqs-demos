@@ -73,7 +73,7 @@ ARG LIBUV_VERSION
 
 # install some build tools and libraries for node building
 RUN apt update && apt install -y --no-install-recommends \
-    build-essential wget \
+    build-essential wget python3 \
     libnghttp2-dev libbrotli-dev zlib1g-dev
 
 # we need a newer version of libuv than ubuntu provides
